@@ -30,4 +30,48 @@ function randomFloat (min, max) {
 
   return parseFloat(value.toFixed(2));
 }
+var shape = document.querySelector(".shape");
+var width = randomNumber(200, 200);
+var height = randomNumber(200, 200);
 
+shape.style.width = width + "px";
+shape.style.height = height + "px";
+
+function hslColor(h, s, l) {  
+  var hue = h;
+  var saturation = s + "%";
+  var luminance = l + "%";
+
+  var color = "hsl(" + hue + "," + saturation + "," + luminance + ")";
+
+  return color;
+}
+var scale = randomFloat(0.1,0.99)
+shape.style.scale = "(" + scale + ")";
+
+
+
+
+var h = randomNumber(0,359);
+
+shape.style.background = hslColor(h,50,50);
+
+var h = randomNumber(0,359);
+
+shape.style.borderColor = hslColor(h,50,50);
+
+var container = document.querySelector(".content");
+
+container.style.background = hslColor(h,30,90);
+
+var s = randomNumber(1,99);
+
+shape.style.background = hslColor(h,s,50);
+
+var s = randomNumber(1,99);
+
+shape.style.borderColor = hslColor(h,s,50);
+
+var container = document.querySelector(".content");
+
+container.style.background = hslColor(h,s,90);

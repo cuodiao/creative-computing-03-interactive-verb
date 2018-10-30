@@ -3,8 +3,12 @@
 }
 
 html {
+  background: linear-gradient( rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.2) );
   margin: 0;
   padding: 0;
+}
+.header {
+  text-align:center;
 }
 
 body {
@@ -31,5 +35,17 @@ body {
 .verb h1 {
   font-size: 200px;
   text-align: center;
+  
 }
 
+.verb h1 span:hover {
+  color: #6d5636;
+  font-size: 120%;
+  opacity: 84%;
+  cursor: pointer;
+  transition: all 1.5s;
+
+}
+.menu {
+  text-align:center;
+}

@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+
 }
 
 html {
@@ -13,6 +14,8 @@ body {
   min-width: 100vw;
   min-height: 100vh;
 }
+
+
 
 .center {
   position: absolute;
@@ -30,9 +33,18 @@ body {
 }
 
 .shape {
-  background: red;
+  background: black;
   width: 200px;
   height: 200px;
+  margin: 0 auto;
+  top: 500px;
+}
+
+.link {
+   text-align: center;
+   bottom: 800px;
+   position:relative; 
+   top:600px;
 }
 
 .transforms {
@@ -45,4 +57,66 @@ body {
   transform: scaleY(1.5);
   transform: translateX(50px);
   transform: translateY(50px);
+}
+
+@keyframes fly {
+  0%{
+    background: black;
+    transform:scale(0.5) translate(0px, 500px);
+  }
+  5%{
+    background: #9672c4;
+    transform:scale(0.5) translate(0px, 300px);
+  }
+  10%{
+    background: #9672c4;
+    transform:scale(0.5) translate(0px, 230px);
+  }
+  12.5%{
+    background: #9672c4;
+    transform:scale(0.5) translate(0px, 200px);
+  }
+  15%{
+    background: red;
+    transform:scale(0.5) translate(0px, 800px);
+  }
+  25%{
+    background: red;
+    transform:scale(0.5) translate(0px, 800px);
+  }
+  35%{
+    background: #9672c4;
+    transform:scale(0.5) translate(0px, 200px);
+  }
+  37%{
+    background: red;
+    transform:scale(0.5) translate(0px, 500px);
+  }
+  55%{
+    background: #9672c4;
+    transform:scale(0.5) translate(0px, 50px);
+  }
+  65%{
+    background: #d173a6;
+    transform:scale(0.5) translate(0px, 55px);
+  }
+  75%{
+    background: #69dbc8;
+    transform:scale(0.5) translate(0px, 50px);
+  }
+  85%{
+    background: #e07260;
+    transform:scale(0.5) translate(0px, 55px);
+  }
+  100%{
+    background: skyblue;
+    transform:scale(0.5) translate(0px, 50px);
+  }
+}
+  .variation-1 {
+animation-name: fly;
+animation-duration: 10s;
+animation-iteration-count: infinite;
+animation-direction: normal;
+
 }
